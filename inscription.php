@@ -9,7 +9,6 @@ if(isset($_POST['submit']))
 	{
 		if($password == $repeatpassword)
 		{
-			$password = md5($password);
 			$db = mysqli_connect('localhost', 'root', '') or die('Erreur');
 			mysqli_select_db($db, 'livreor');
 
