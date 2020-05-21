@@ -92,11 +92,6 @@ p
 	color : black;
 }
 
-body
-{
-	background: url(backg.jpg) white;
-    background-size:cover;}
-
 .input
 {
 	display:block;
