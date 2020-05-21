@@ -94,8 +94,8 @@ p
 
 body
 {
-	background-color : cadetblue;
-}
+	background: url(backg.jpg) white;
+    background-size:cover;}
 
 .input
 {
