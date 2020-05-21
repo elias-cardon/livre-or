@@ -42,9 +42,6 @@
 							<li>- Messagerie</li>
 							<li>- Téléphone</li>
 						</ul><br/>
-						<ul class="actions">
-							<li><a href="#" class="button">Site Officiel</a></li>
-						</ul>
 					</section>
 
 				<!-- Two -->
@@ -76,9 +73,6 @@
 								<h3>IMG-6</h3>
 							</article>
 						</div>
-						<ul class="actions">
-							<li><a href="#" class="button">Site Officiel</a></li>
-						</ul>
 					</section>
 
 				
