@@ -89,6 +89,7 @@ p
 	font-size: 16pt;
 	font-weight: 400;
 	line-height: 1.75em;
+	color : black;
 }
 
 body
