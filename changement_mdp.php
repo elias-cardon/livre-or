@@ -54,6 +54,7 @@ else
 <html>
 <head>
 	<title>Changement de login</title>
+	<link rel="icon" type="image/png" href="images/avatar.png">
 </head>
 <body>
 	<!-- Header -->
@@ -63,6 +64,11 @@ else
 					<h1><strong>VisualScan</strong>
 					<i>"The vision and technology of the near future"</i>
 				</div>
+				<ul id="lien">
+					<li><a href="inscription.php">Inscription</a></li>
+					<li><a href="connexion.php">Connexion</a></li>
+					<li><a href="livre-or.php">Livre d'or</a></li>
+				</ul>
 			</header>
 			<!-- Footer -->
 			<footer id="footer">
@@ -626,7 +632,10 @@ input, select, textarea {
 
 
 /* Header */
-
+#lien
+{
+	padding-bottom: 6.5rem;
+}
 	#header {
 		display: -moz-flex;
 		display: -webkit-flex;

@@ -6,6 +6,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="icon" type="image/png" href="images/avatar.png">
 	</head>
 	<body class="is-preload">
 
@@ -16,6 +17,11 @@
 					<h1><strong>VisualScan</strong>
 					<i>"The vision and technology of the near future"</i>
 				</div>
+				<ul id="lien">
+					<li><a href="inscription.php">Inscription</a></li>
+					<li><a href="connexion.php">Connexion</a></li>
+					<li><a href="livre-or.php">Livre d'or</a></li>
+				</ul>
 			</header>
 
 		<!-- Main -->
@@ -1078,6 +1084,11 @@ input, select, textarea {
 
 
 /* Header */
+
+#lien
+{
+	padding-bottom: 6.5rem;
+}
 
 	#header {
 		display: -moz-flex;
