@@ -49,7 +49,7 @@ if(isset($_POST['submit']))
 			</header>
 			<!-- Main -->
 		<main>
-			<h1>Inscription</h1>
+			<h1>Inscription</h1><br/>
 				<form method="post" action="inscription.php">
         			<p>Login</p>
         			<input class="input" type="text" name="login">

@@ -26,7 +26,16 @@
 						<header class="major">
 							<h2>Lunettes connectées, technologie révolutionnaire<br />
 						</header>
-						<p>Lunette prototype connecté, bluetooth, application intégrée, pavé tactile, verre à correction, résistant à l'eau</p>
+						<p><u>Fonctionnalités</u> :</p>
+						<ul>
+							<li>- Bluetooth</li>
+							<li>- Pavé tactile</li>
+							<li>- Résistant à l'eau</li>
+							<li>- Verre à correction</li>
+							<li>- GPS</li>
+							<li>- Messagerie</li>
+							<li>- Téléphone</li>
+						</ul><br/>
 						<ul class="actions">
 							<li><a href="#" class="button">Site Officiel</a></li>
 						</ul>
