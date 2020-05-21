@@ -37,11 +37,47 @@ if (isset($_POST['submit'])) {
 			<h1>Connexion</h1>
 				<form method="post" action="connexion.php">
         			<p>Login</p>
-        			<input type="text" name="login">
+        			<input class="input" type="text" name="login">
         			<p>Mot de passe</p>
-        			<input type="password" name="password"><br/><br/>
-        			<input type="submit" name="submit" value="Valider">
+        			<input class="input" type="password" name="password"><br/><br/>
+        			<input class="input" type="submit" name="submit" value="Valider"><br/>
 				</form>
 		</main>
 	</body> 
 </html>
+
+<?php
+echo '<style>
+h1
+{
+	text-align : center;
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+	text-decoration : underline;
+}
+p
+{
+	text-align : center;
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+	font-size: 16pt;
+	font-weight: 400;
+	line-height: 1.75em;
+}
+
+body
+{
+	background-color : cadetblue;
+}
+
+.input
+{
+	display:block;
+	margin:auto;
+}
+
+
+form
+{
+	border : 4mm ridge rgba(170, 50, 220, .6);
+}
+</style>';
+?>

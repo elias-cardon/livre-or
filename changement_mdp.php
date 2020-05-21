@@ -34,12 +34,12 @@ if (isset($_SESSION['login'])) {
 
 echo '<form method="POST" action="changement.php">
 <p>Votre ancien mot de passe</p>
-<input type="password" name="password"<br/>
+<input class="input" type="password" name="password"<br/>
 <p>Votre nouveau mot de passe</p>
-<input type="password" name="newpassword">
+<input class="input" type="password" name="newpassword">
 <p>Répétez votre nouveau mot de passe</p>
-<input type="password" name="repeatnewpassword"><br/><br/>
-<input type="submit" value="Changer de mot de passe" name="submit"</input>
+<input class="input" type="password" name="repeatnewpassword"><br/><br/>
+<input class="input" type="submit" value="Changer de mot de passe" name="submit"</input><br/>
 </form>
 	';
 }
@@ -47,4 +47,41 @@ else
 {
 	header("Location:connexion.php");
 }
+?>
+
+<?php
+echo '<style>
+h1
+{
+	text-align : center;
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+	text-decoration : underline;
+}
+
+p
+{
+	text-align : center;
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+	font-size: 16pt;
+	font-weight: 400;
+	line-height: 1.75em;
+}
+
+body
+{
+	background-color : cadetblue;
+}
+
+.input
+{
+	display:block;
+	margin:auto;
+}
+
+
+form
+{
+	border : 4mm ridge rgba(170, 50, 220, .6);
+}
+</style>';
 ?>

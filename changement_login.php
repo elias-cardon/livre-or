@@ -34,12 +34,12 @@ if (isset($_SESSION['login'])) {
 
 echo '<form method="POST" action="changement_login.php">
 <p>Votre ancien login</p>
-<input type="text" name="login"<br/>
+<input class="input" type="text" name="login"<br/>
 <p>Votre nouveau login</p>
-<input type="text" name="newlogin">
+<input class="input" type="text" name="newlogin">
 <p>Répétez votre nouveau login</p>
-<input type="text" name="repeatnewlogin"><br/><br/>
-<input type="submit" value="Changer de login" name="submit"</input>
+<input class="input" type="text" name="repeatnewlogin"><br/><br/>
+<input class="input" type="submit" value="Changer de login" name="submit"</input>
 </form>
 	';
 }
@@ -50,3 +50,39 @@ else
 ?>
 
 
+<?php
+echo '<style>
+h1
+{
+	text-align : center;
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+	text-decoration : underline;
+}
+
+p
+{
+	text-align : center;
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+	font-size: 16pt;
+	font-weight: 400;
+	line-height: 1.75em;
+}
+
+body
+{
+	background-color : cadetblue;
+}
+
+.input
+{
+	display:block;
+	margin:auto;
+}
+
+
+form
+{
+	border : 4mm ridge rgba(170, 50, 220, .6);
+}
+</style>';
+?>
