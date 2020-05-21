@@ -20,7 +20,7 @@ if ($_SESSION['login']) {
 }
 
 ?>
-<nav><a href="index.php">Accueil</a> | <a href="profil.php">Profil</a> | <a href="livreor.php">Livre d'or</a>  <br/> <a href='logout.php'>Se déconnecter</a></p></a></nav>
+<nav><a href="index.php">Accueil</a> | <a href="profil.php">Profil</a> | <a href="livre-or.php">Livre d'or</a>  <br/> <a href='logout.php'>Se déconnecter</a></p></a></nav>
 <h2>Commentaires:</h2>
 <form action="commentaire.php" method="POST">
 
