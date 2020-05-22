@@ -1,7 +1,7 @@
 <?php
 session_start();
 if ($_SESSION['login']) {
-	echo "<p>Bienvenue ".$_SESSION['login']. " ! <br/>
+	echo "<p>Bienvenue ".$_SESSION['login']. " ! <br/><br/>
 
 	<a href='changement_mdp.php'>Changer de mot de passe</a><br/>
 
@@ -29,8 +29,7 @@ else
 					<i>"The vision and technology of the near future"</i>
 				</div>
 				<ul id="lien">
-					<li><a href="inscription.php">Inscription</a></li>
-					<li><a href="connexion.php">Connexion</a></li>
+					<li><a href="index.php">Accueil</a></li>
 					<li><a href="livre-or.php">Livre d'or</a></li>
 				</ul>
 			</header>
