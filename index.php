@@ -1,3 +1,4 @@
+<!-- Quand la vie te donne des citrons, dis que ceux sont des oranges jaunes et vend-les deux fois plus cher. -->
 <?php ?>
 
 <html>
@@ -49,28 +50,22 @@
 						<h2>Les Images</h2>
 						<div class="row">
 							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/01.jpg" class="image fit thumb"><img src="images/thumbs/01.jpg" alt="" /></a>
-								<h3>IMG-1</h3>
+								<a href="images/fulls/01.jpg" class="image fit thumb"><img src="images/thumbs/01.jpg" alt="1ere image" /></a>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/02.jpeg" class="image fit thumb"><img src="images/thumbs/02.jpeg" alt="" /></a>
-								<h3>IMG-2</h3>
+								<a href="images/fulls/02.jpeg" class="image fit thumb"><img src="images/thumbs/02.jpeg" alt="2ere image" /></a>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/03.png" class="image fit thumb"><img src="images/thumbs/03.png" alt="" /></a>
-								<h3>IMG-3</h3>
+								<a href="images/fulls/03.png" class="image fit thumb"><img src="images/thumbs/03.png" alt="3ere image" /></a>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/04.jpg" class="image fit thumb"><img src="images/thumbs/04.jpg" alt="" /></a>
-								<h3>IMG-4</h3>
+								<a href="images/fulls/04.jpg" class="image fit thumb"><img src="images/thumbs/04.jpg" alt="4ere image" /></a>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/05.jpg" class="image fit thumb"><img src="images/thumbs/05.jpg" alt="" /></a>
-								<h3>IMG-5</h3>
+								<a href="images/fulls/05.jpg" class="image fit thumb"><img src="images/thumbs/05.jpg" alt="5ere image" /></a>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/06.jpg" class="image fit thumb"><img src="images/thumbs/06.jpg" alt="" /></a>
-								<h3>IMG-6</h3>
+								<a href="images/fulls/06.jpg" class="image fit thumb"><img src="images/thumbs/06.jpg" alt="6ere image" /></a>
 							</article>
 						</div>
 					</section>

@@ -39,7 +39,7 @@ if(isset($_POST['submit']))
 		<title>Inscription</title>
 		<link rel="icon" type="image/png" href="images/avatar.png">
 	</head>
-	<body>
+	<body class="color">
 		<!-- Header -->
 			<header id="header">
 				<nav><a href="index.php">Accueil</a> | <a href="connexion.php">Connexion</a></nav>
@@ -97,6 +97,11 @@ p
 {
 	display:block;
 	margin:auto;
+}
+
+.color
+{
+	background-color: #E4E0E0;
 }
 </style>';
 ?>
@@ -194,7 +199,7 @@ input, select, textarea {
 		-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		border-bottom: dotted 1px;
-		color: #49bf9d;
+		color: #0146CA;
 		text-decoration: none;
 	}
 
