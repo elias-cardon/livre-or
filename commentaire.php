@@ -20,14 +20,22 @@ if ($_SESSION['login']) {
 }
 
 ?>
-<nav><a href="index.php">Accueil</a> | <a href="profil.php">Profil</a> | <a href="livre-or.php">Livre d'or</a>  <br/></nav><nav id="deco"><a href='logout.php'>Se déconnecter</a></nav>
-<h2>Commentaires:</h2>
-<form action="commentaire.php" method="POST">
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Commentaire</title>
+</head>
+<body class="color">
+  <nav><a href="index.php">Accueil</a> | <a href="profil.php">Profil</a> | <a href="livre-or.php">Livre d'or</a>  <br/></nav><nav id="deco"><a href='logout.php'>Se déconnecter</a></nav>
+  <h2>Commentaires:</h2>
+  <form action="commentaire.php" method="POST">
 
-   <textarea class="input" name="commentaire" placeholder="Votre commentaire..."></textarea><br />
-   <input class="input" type="submit" value="Poster mon commentaire" name="submit_commentaire" />
+    <textarea class="input" name="commentaire" placeholder="Votre commentaire..."></textarea><br />
+    <input class="input" type="submit" value="Poster mon commentaire" name="submit_commentaire" />
+  </form>
+</body>
+</html>
 
-</form>
 
 <?php
 echo '<style>
@@ -62,6 +70,11 @@ form
 #deco
 {
   margin-left : 2rem;
+}
+
+.color
+{
+  background-color: #E4E0E0;
 }
 </style>';
 ?>
