@@ -20,7 +20,7 @@ if ($_SESSION['login']) {
 }
 
 ?>
-<nav><a href="index.php">Accueil</a> | <a href="profil.php">Profil</a> | <a href="livre-or.php">Livre d'or</a>  <br/> <a href='logout.php'>Se déconnecter</a></p></a></nav>
+<nav><a href="index.php">Accueil</a> | <a href="profil.php">Profil</a> | <a href="livre-or.php">Livre d'or</a>  <br/></nav><nav id="deco"><a href='logout.php'>Se déconnecter</a></nav>
 <h2>Commentaires:</h2>
 <form action="commentaire.php" method="POST">
 
@@ -57,6 +57,11 @@ p
 form
 {
   border : 4mm ridge rgba(170, 50, 220, .6);
+}
+
+#deco
+{
+  margin-left : 2rem;
 }
 </style>';
 ?>
