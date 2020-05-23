@@ -101,7 +101,7 @@ p
 
 .color
 {
-	background-color: #E4E0E0;
+	background-color: #E0D8E0;
 }
 </style>';
 ?>
