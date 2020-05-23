@@ -1,100 +1,3 @@
-<!-- Quand la vie te donne des citrons, dis que ceux sont des oranges jaunes et vend-les deux fois plus cher. -->
-<?php ?>
-
-<html>
-	<head>
-		<title>Présentation de la technologie</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="icon" type="image/png" href="images/avatar.png">
-	</head>
-	<body class="is-preload">
-
-		<!-- Header -->
-			<header id="header">
-				<div class="inner">
-					<a href="#" class="image avatar"><img src="images/avatar.png" alt="" /></a>
-					<h1><strong>VisualScan</strong>
-					<i>"The vision and technology of the near future"</i>
-				</div>
-				<ul id="lien">
-					<li><a href="inscription.php">Inscription</a></li>
-					<li><a href="connexion.php">Connexion</a></li>
-					<li><a href="livre-or.php">Livre d'or</a></li>
-				</ul>
-			</header>
-
-		<!-- Main -->
-			<div id="main">
-
-				<!-- One -->
-					<section id="one">
-						<header class="major">
-							<h2>Lunettes connectées, technologie révolutionnaire<br />
-						</header>
-						<p><u>Fonctionnalités</u> :</p>
-						<ul>
-							<li>- Bluetooth</li>
-							<li>- Pavé tactile</li>
-							<li>- Résistant à l'eau</li>
-							<li>- Verre à correction</li>
-							<li>- GPS</li>
-							<li>- Messagerie</li>
-							<li>- Téléphone</li>
-						</ul><br/>
-					</section>
-
-				<!-- Two -->
-					<section id="two">
-						<h2>Les Images</h2>
-						<div class="row">
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/01.jpg" class="image fit thumb"><img src="images/thumbs/01.jpg" alt="1ere image" /></a>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/02.jpeg" class="image fit thumb"><img src="images/thumbs/02.jpeg" alt="2ere image" /></a>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/03.png" class="image fit thumb"><img src="images/thumbs/03.png" alt="3ere image" /></a>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/04.jpg" class="image fit thumb"><img src="images/thumbs/04.jpg" alt="4ere image" /></a>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/05.jpg" class="image fit thumb"><img src="images/thumbs/05.jpg" alt="5ere image" /></a>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/06.jpg" class="image fit thumb"><img src="images/thumbs/06.jpg" alt="6ere image" /></a>
-							</article>
-						</div>
-					</section>
-
-				
-
-		<!-- Footer -->
-			<footer id="footer">
-				<div class="inner">
-					<ul class="icons">
-						<li><a href="https://twitter.com/explore" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="https://github.com/" class="icon brands fa-github"><span class="label">Github</span></a></li>
-						<li><a href="https://dribbble.com/" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-						<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-					</ul>
-				</div>
-			</footer>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-        <!-- CSS -->
-            <style>
-
 @import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic");
 
@@ -1074,11 +977,6 @@ input, select, textarea {
 
 /* Header */
 
-#lien
-{
-	padding-bottom: 6.5rem;
-}
-
 	#header {
 		display: -moz-flex;
 		display: -webkit-flex;
@@ -1475,9 +1373,13 @@ input, select, textarea {
 					margin-bottom: 0;
 				}
 
-        </style>
-	</body>
-</html>
+		
 
 
 
+		
+
+	
+
+	
+		

@@ -1,55 +1,75 @@
 <?php
 session_start();
-if (isset($_POST['submit'])) {
-	$login = $_POST['login'];
-	$password = $_POST['password'];
-	if ($login && $password) {
-		$db = mysqli_connect('localhost', 'root', '');
-		mysqli_select_db($db, 'livreor');
-
-		$query = mysqli_query($db, "SELECT * FROM utilisateurs WHERE login='$login' && password='$password'");
-		$rows = mysqli_num_rows($query);
-		if ($rows==1) {
-			$_SESSION['login'] = $login;
-			header('Location:profil.php');
+if (isset($_SESSION['login'])) {
+	$username = $_SESSION['login'];
+	if (isset($_POST['submit'])) {
+		$login = $_POST['login'];
+		$newlogin = $_POST['newlogin'];
+		$repeatnewlogin = $_POST['repeatnewlogin'];
+		if ($login && $newlogin && $repeatnewlogin) {
+			if ($newlogin == $repeatnewlogin) {
+				$db = mysqli_connect('localhost', 'root', '') or die('Erreur');
+				mysqli_select_db($db, 'livreor');
+				$query = mysqli_query($db, "SELECT * FROM utilisateurs WHERE login = '$username' AND login = '$login'");
+				$rows = mysqli_num_rows($query);
+				if ($rows==1) {
+					$newpass = mysqli_query($db, "UPDATE utilisateurs SET login='$newlogin' WHERE login='$username'");
+					die("Votre login a bien été modifié. Vous pouvez vous <a href='connexion.php'>connecter</a>.");
+				}
+				else
+				{
+					echo "Votre ancien login est incorrect";
+				}
+			}
+			else
+				{echo "Les deux champs doivent être identiques";}
+		
 		}
 		else
 		{
-			echo "Login ou password incorrect";
+			echo "Veuillez saisir tous les champs";
 		}
 	}
 
-	else
-	{
-		echo "Veuillez saisir tous les champs.";
-	}
+
+echo '<form method="POST" action="changement_login.php">
+<p>Votre ancien login</p>
+<input class="input" type="text" name="login"<br/>
+<p>Votre nouveau login</p>
+<input class="input" type="text" name="newlogin">
+<p>Répétez votre nouveau login</p>
+<input class="input" type="text" name="repeatnewlogin"><br/><br/>
+<input class="input" type="submit" value="Changer de login" name="submit"</input>
+</form>
+	';
+}
+else
+{
+	header("Location:connexion.php");
 }
 ?>
 
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>Connexion</title>
-		<link rel="icon" type="image/png" href="images/avatar.png">
-	</head>
-	<body class="color">
-		<!-- Header -->
+<head>
+	<title>Changement de login</title>
+	<link rel="icon" type="image/png" href="images/avatar.png">
+</head>
+<body>
+	<!-- Header -->
 			<header id="header">
-				<nav><a href="index.php">Accueil</a> | <a href="inscription.php">Inscription</a></nav>
+				<div class="inner">
+					<a href="index.php" class="image avatar"><img src="images/avatar.png" alt="" /></a>
+					<h1><strong>VisualScan</strong>
+					<i>"The vision and technology of the near future"</i>
+				</div>
+				<ul id="lien">
+					<li><a href="inscription.php">Inscription</a></li>
+					<li><a href="connexion.php">Connexion</a></li>
+					<li><a href="livre-or.php">Livre d'or</a></li>
+				</ul>
 			</header>
-			<!-- Main -->
-		<main>
-			<h1>Connexion</h1>
-				<form method="post" action="connexion.php">
-        			<p>Login</p>
-        			<input class="input" type="text" name="login">
-        			<p>Mot de passe</p>
-        			<input class="input" type="password" name="password"><br/><br/>
-        			<input class="input" type="submit" name="submit" value="Valider"><br/>
-				</form>
-		</main>
-		<!-- Footer -->
+			<!-- Footer -->
 			<footer id="footer">
 				<div class="inner">
 					<ul class="icons">
@@ -68,7 +88,7 @@ if (isset($_POST['submit'])) {
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-	</body> 
+</body>
 </html>
 
 <?php
@@ -79,6 +99,7 @@ h1
 	font-family: "Source Sans Pro", Helvetica, sans-serif;
 	text-decoration : underline;
 }
+
 p
 {
 	text-align : center;
@@ -87,6 +108,11 @@ p
 	font-weight: 400;
 	line-height: 1.75em;
 	color : black;
+}
+
+body
+{
+	background-color : cadetblue;
 }
 
 .input
@@ -100,15 +126,10 @@ form
 {
 	border : 4mm ridge rgba(170, 50, 220, .6);
 }
-
-.color
-{
-	background-color: #E4E0E0;
-}
 </style>';
 ?>
 
- <!-- CSS -->
+<!-- CSS -->
             <style>
 
 @import url("fontawesome-all.min.css");
@@ -201,7 +222,7 @@ input, select, textarea {
 		-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		border-bottom: dotted 1px;
-		color: #0146CA;
+		color: #49bf9d;
 		text-decoration: none;
 	}
 
@@ -614,6 +635,74 @@ input, select, textarea {
 {
 	padding-bottom: 6.5rem;
 }
+	#header {
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		-moz-flex-direction: column;
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		-moz-align-items: -moz-flex-end;
+		-webkit-align-items: -webkit-flex-end;
+		-ms-align-items: -ms-flex-end;
+		align-items: flex-end;
+		-moz-justify-content: space-between;
+		-webkit-justify-content: space-between;
+		-ms-justify-content: space-between;
+		justify-content: space-between;
+		background-color: #1f1815;
+		background-attachment: scroll,								scroll;
+		background-image: url("images/overlay.png"), url("../../images/bg.jpg");
+		background-position: top left,							top left;
+		background-repeat: repeat,								no-repeat;
+		background-size: auto,								150%;
+		color: rgba(255, 255, 255, 0.5);
+		height: 100%;
+		left: 0;
+		padding: 8em 4em;
+		position: fixed;
+		text-align: right;
+		top: 0;
+		width: 35%;
+	}
+
+		#header > * {
+			-moz-flex-shrink: 0;
+			-webkit-flex-shrink: 0;
+			-ms-flex-shrink: 0;
+			flex-shrink: 0;
+			width: 100%;
+		}
+
+		#header > .inner {
+			-moz-flex-grow: 1;
+			-webkit-flex-grow: 1;
+			-ms-flex-grow: 1;
+			flex-grow: 1;
+			margin: 0 0 2em 0;
+		}
+
+		#header strong, #header b {
+			color: #ffffff;
+		}
+
+		#header h2, #header h3, #header h4, #header h5, #header h6 {
+			color: #ffffff;
+		}
+
+		#header h1 {
+			color: rgba(255, 255, 255, 0.5);
+			font-size: 1.35em;
+			line-height: 1.75em;
+			margin: 0;
+		}
+
+		#header .image.avatar {
+			margin: 0 0 1em 0;
+			width: 6.25em;
+		}
 
 /* Footer */
 
